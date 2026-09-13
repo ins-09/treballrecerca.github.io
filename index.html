@@ -50,7 +50,31 @@
     outline-offset: 3px;
   }
 
-  img{ max-width: 100%; border-radius: 12px; display:block; }
+  img{ 
+    max-width: 50%; 
+    border-radius: 12px; 
+    display:block; 
+  }
+
+  .xarxes {
+    width: 170px;
+    height: 170px;
+  }
+
+  #xarxes .box {
+    max-height: 180px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  #xarxes .box figure {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+    padding: 0;
+    width: 50%;
+    height: auto;
+  }
 
   /* ---------- Hero ---------- */
   .hero{
@@ -643,29 +667,31 @@
     </ol>
 
     <h3>Xarxes socials explicades fàcilment</h3>
-    <div class="box">
-      <p><strong>Facebook:</strong> veure fotos de la família, llegir notícies, comentar.</p>
-      <figure class="shot">
-        <img src="./src/assets/images/imagen32.png" alt="Pantalla de Facebook" loading="lazy">
-      </figure>
-    </div>
-    <div class="box">
-      <p><strong>Instagram:</strong> Story (foto de 24h), Post (foto normal), Reels (vídeos curts).</p>
-      <figure class="shot">
-        <img src="./src/assets/images/imagen33.png" alt="Pantalla d'Instagram" loading="lazy">
-      </figure>
-    </div>
-    <div class="box">
-      <p><strong>YouTube:</strong> vídeos de música, receptes, notícies, exercicis suaus.</p>
-      <figure class="shot">
-        <img src="./src/assets/images/imagen34.png" alt="Pantalla de YouTube" loading="lazy">
-      </figure>
-    </div>
-    <div class="box">
-      <p><strong>TikTok:</strong> vídeos curts. No cal publicar res, només mirar.</p>
-      <figure class="shot">
-        <img src="./src/assets/images/imagen35.png" alt="Pantalla de TikTok" loading="lazy">
-      </figure>
+    <div id="xarxes">
+      <div class="box">
+        <p><strong>Facebook:</strong> veure fotos de la família, llegir notícies, comentar.</p>
+        <figure class="xarxes">
+          <img src="./src/assets/images/imagen32.png" alt="Pantalla de Facebook" loading="lazy">
+        </figure>
+      </div>
+      <div class="box">
+        <p><strong>Instagram:</strong> Story (foto de 24h), Post (foto normal), Reels (vídeos curts).</p>
+        <figure class="xarxes">
+          <img src="./src/assets/images/imagen33.png" alt="Pantalla d'Instagram" loading="lazy">
+        </figure>
+      </div>
+      <div class="box">
+        <p><strong>YouTube:</strong> vídeos de música, receptes, notícies, exercicis suaus.</p>
+        <figure class="xarxes">
+          <img src="./src/assets/images/imagen34.png" alt="Pantalla de YouTube" loading="lazy">
+        </figure>
+      </div>
+      <div class="box">
+        <p><strong>TikTok:</strong> vídeos curts. No cal publicar res, només mirar.</p>
+        <figure class="xarxes">
+          <img src="./src/assets/images/imagen35.png" alt="Pantalla de TikTok" loading="lazy">
+        </figure>
+      </div>
     </div>
 
     <h3>Llenguatge jove explicat</h3>
