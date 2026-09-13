@@ -1,7 +1,7 @@
 ---
 title: Guia Digital Amiga
 description: Una guia pensada per a tu, perquè puguis utilitzar el mòbil amb calma, seguretat i sense vergonya.
-template: splash
+#template: splash
 ---
 
 ## Una guia pensada per a tu, perquè puguis utilizar el mòbil amb calma, seguretat i sense vergonya.
@@ -30,30 +30,30 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 
 1. Obre Configuració.
 2. Entra a Pantalla.
-![Configuración accediendo al apartado de Pantalla y Brillo](../../assets/images/imagen1.png)
+![Configuración accediendo al apartado de Pantalla y Brillo](./src/assets/images/imagen1.png)
 3. Toca Mida del text.
-![Configurar el tamaño del texto](../../assets/images/imagen2.png)
+![Configurar el tamaño del texto](./src/assets/images/imagen2.png)
 4. Mou la barra fins que la lletra es vegi gran.
-![(Descripcion)](../../assets/images/imagen3.png)
+![(Descripcion)](./src/assets/images/imagen3.png)
 
 **Text en negreta:** Configuració → Accessibilitat → Text en negreta. 
-![(Descripcion)](../../assets/images/imagen4.png)
-![(Descripcion)](../../assets/images/imagen5.png)
+![(Descripcion)](./src/assets/images/imagen4.png)
+![(Descripcion)](./src/assets/images/imagen5.png)
 
 **Zoom:** Configuració → Accessibilitat → Zoom.
-![(Descripcion)](../../assets/images/imagen6.png)
-![(Descripcion)](../../assets/images/imagen7.png)
+![(Descripcion)](./src/assets/images/imagen6.png)
+![(Descripcion)](./src/assets/images/imagen7.png)
 
 ### Volum i so
 - Botons laterals per pujar o baixar el volum. 
 - Configuració → So → Vibració. 
-![(Descripcion)](../../assets/images/imagen8.png)
-![(Descripcion)](../../assets/images/imagen9.png)
-![(Descripcion)](../../assets/images/imagen10.png)
+![(Descripcion)](./src/assets/images/imagen8.png)
+![(Descripcion)](./src/assets/images/imagen9.png)
+![(Descripcion)](./src/assets/images/imagen10.png)
 
 - Configuració → Accessibilitat → Subtítols.
-![(Descripcion)](../../assets/images/imagen11.png)
-![(Descripcion)](../../assets/images/imagen12.png)
+![(Descripcion)](./src/assets/images/imagen11.png)
+![(Descripcion)](./src/assets/images/imagen12.png)
 
 ### Mode fàcil
 
@@ -63,7 +63,7 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 ## Aplicacions bàsiques del mòbil
 
 **La linterna:** Serveix per il·luminar en foscor. Normalment es troba a la barra superior del mòbil. 
-![(Descripcion)](../../assets/images/imagen13.png)
+![(Descripcion)](./src/assets/images/imagen13.png)
 
 **El calendari:** Serveix per recordar cites, aniversaris i medicació. Prem “+” per afegir un recordatori. 
 
@@ -78,9 +78,9 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 1. Obre WhatsApp.
 2. Toca el nom de la persona.
 3. Escriu el missatge.
-![(Descripcion)](../../assets/images/imagen14.png)
+![(Descripcion)](./src/assets/images/imagen14.png)
 4. Fes clic a l’icone d’enviar.
-![(Descripcion)](../../assets/images/imagen15.png)
+![(Descripcion)](./src/assets/images/imagen15.png)
 
 ### Enviar una foto
 1. Clip o càmera.
@@ -89,10 +89,10 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 
 ### Nota de veu
 1. Mantén premut el micròfon.
-![(Descripcion)](../../assets/images/imagen16.png)
+![(Descripcion)](./src/assets/images/imagen16.png)
 2. Parla.
 3. Deixa de pulsar el botó del micròfon.
-![(Descripcion)](../../assets/images/imagen17.png)
+![(Descripcion)](./src/assets/images/imagen17.png)
 
 ### Videotrucada
 1. Entra al xat.
@@ -103,19 +103,19 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 
 ### Compartir fotos
 1. Obre la foto.
-![(Descripcion)](../../assets/images/imagen18.png)
+![(Descripcion)](./src/assets/images/imagen18.png)
 
 2. Compartir.
 3. Tria WhatsApp.
-![(Descripcion)](../../assets/images/imagen19.png)
+![(Descripcion)](./src/assets/images/imagen19.png)
 
 ### Editar fotos i vídeos (molt fàcil)
 1. Obre Galeria.
-![(Descripcion)](../../assets/images/imagen22.png)
+![(Descripcion)](./src/assets/images/imagen22.png)
 2. Toca el vídeo.
-![(Descripcion)](../../assets/images/imagen20.png)
+![(Descripcion)](./src/assets/images/imagen20.png)
 3. Prem Editar.
-![(Descripcion)](../../assets/images/imagen21.png)
+![(Descripcion)](./src/assets/images/imagen21.png)
 4. Pots tallar, retallar o afegir música.
 5. Guarda.
 
@@ -124,18 +124,18 @@ Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa pe
 Eliminar fotos duplicades
 - **Galeria**
 
-![(Descripcion)](../../assets/images/imagen23.png)
+![(Descripcion)](./src/assets/images/imagen23.png)
 **→ Àlbums → Duplicats**
 
-![(Descripcion)](../../assets/images/imagen24.png)
-![(Descripcion)](../../assets/images/imagen25.png)
+![(Descripcion)](./src/assets/images/imagen24.png)
+![(Descripcion)](./src/assets/images/imagen25.png)
 
 **→ Eliminar**
 
 
 Eliminar aplicacions que no uses
 - Mantén premut sobre l’app → Eliminar
-![(Descripcion)](../../assets/images/imagen26.png)
+![(Descripcion)](./src/assets/images/imagen26.png)
 
 Actualitzar aplicacions Play Store / App Store → Actualitzacions. 
 
@@ -147,22 +147,22 @@ Evitar que el mòbil vagi lent
 
 ### Buscar informació a Google
 1. Obre Chrome.
-![(Descripcion)](../../assets/images/imagen27.png)
+![(Descripcion)](./src/assets/images/imagen27.png)
 
 2. Escriu el que vols saber.
-![(Descripcion)](../../assets/images/imagen28.png)
+![(Descripcion)](./src/assets/images/imagen28.png)
 
 3. Prem Buscar.
 
 ### Buscar amb la veu
 1. Prem el micròfon.
-![(Descripcion)](../../assets/images/imagen29.png)
+![(Descripcion)](./src/assets/images/imagen29.png)
 
 2. Digues el que vols buscar.
 
 ### Entrar a una pàgina web
 1. Escriu el nom de la web.
-![(Descripcion)](../../assets/images/imagen30.png)
+![(Descripcion)](./src/assets/images/imagen30.png)
 
 2. Toca el primer resultat oficial.
 
@@ -171,20 +171,20 @@ Evitar que el mòbil vagi lent
 ### Tancar finestres
 1. Botó de pestanyes.
 2. Tanca amb la X.
-![(Descripcion)](../../assets/images/imagen31.png)
+![(Descripcion)](./src/assets/images/imagen31.png)
 
 ### Xarxes socials explicades fàcilment
 - Facebook: Veure fotos de la família, llegir notícies, comentar. 
-![(Descripcion)](../../assets/images/imagen32.png)
+![(Descripcion)](./src/assets/images/imagen32.png)
 
 - Instagram: Story (foto de 24h), Post (foto normal), Reels (vídeos curts). 
-![(Descripcion)](../../assets/images/imagen33.png)
+![(Descripcion)](./src/assets/images/imagen33.png)
 
 - YouTube: Vídeos de música, receptes, notícies, exercicis suaus. 
-![(Descripcion)](../../assets/images/imagen34.png)
+![(Descripcion)](./src/assets/images/imagen34.png)
 
 - TikTok: Vídeos curts. No cal publicar res, només mirar.
-![(Descripcion)](../../assets/images/imagen35.png)
+![(Descripcion)](./src/assets/images/imagen35.png)
 
 ### Llenguatge jove explicat
 - **LOL**: fa riure 
@@ -241,11 +241,11 @@ La firma digital és com una signatura per internet.
 ### Demana cita mèdica
 
 1. Entra a la web del CAP.
-![(Descripcion)](../../assets/images/imagen36.png)
+![(Descripcion)](./src/assets/images/imagen36.png)
 
 2. Toca “Demana cita”.
-![(Descripcion)](../../assets/images/imagen37.png)
-![(Descripcion)](../../assets/images/imagen38.png)
+![(Descripcion)](./src/assets/images/imagen37.png)
+![(Descripcion)](./src/assets/images/imagen38.png)
 
 3. Tria metge.
 4. Tria dia i hora.
@@ -283,8 +283,8 @@ Consells:
 - No facis transferències si tens dubtes. 
 - No cliquis en enllaços sospitosos.
 
-![(Descripcion)](../../assets/images/imagen39.png)
-![(Descripcion)](../../assets/images/imagen40.png)
+![(Descripcion)](./src/assets/images/imagen39.png)
+![(Descripcion)](./src/assets/images/imagen40.png)
 
 
 ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
