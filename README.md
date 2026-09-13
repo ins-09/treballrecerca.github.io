@@ -1,49 +1,328 @@
-# Starlight Starter Kit: Basics
+---
+title: Guia Digital Amiga
+description: Una guia pensada per a tu, perquè puguis utilitzar el mòbil amb calma, seguretat i sense vergonya.
+template: splash
+---
 
-[![Built with Starlight](https://astro.badg.es/v2/built-with-starlight/tiny.svg)](https://starlight.astro.build)
+## Una guia pensada per a tu, perquè puguis utilizar el mòbil amb calma, seguretat i sense vergonya.
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧
 
-```
-pnpm create astro@latest -- --template starlight
-```
+Benvingut/da a la Guia Digital Amiga
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+Hola! Aquesta guia està creada per a tu, si alguna vegada t’has sentit perdut/da amb el mòbil, si et fa vergonya demanar ajuda o si tens por de tocar algun botó i equivocar-te. 
 
-## 🚀 Project Structure
+Sóc Natalia Roman Rivera, estudiant de Batxillerat, i he fet aquesta guia perquè sé que moltes persones adultes i grans tenen dificultats amb el mòbil. No és perquè no en siguin capaces, sinó perquè ningú els ha explicat les coses a poc a poc, amb calma i amb lletra gran. 
 
-Inside of your Astro + Starlight project, you'll see the following folders and files:
+Aquí trobaràs:
 
-```
-.
-├── public/
-├── src/
-│   ├── assets/
-│   ├── content/
-│   │   └── docs/
-│   └── content.config.ts
-├── astro.config.mjs
-├── package.json
-└── tsconfig.json
-```
+- Explicacions molt senzilles 
+- Passos clars i curts 
+- Lletra gran i fàcil de llegir 
+- Solucions a les coses que més acostumen a costar 
+- I sobretot: tranquil·litat perquè aquí pots aprendre sense pressa i sense vergonya
 
-Starlight looks for `.md` or `.mdx` files in the `src/content/docs/` directory. Each file is exposed as a route based on its file name.
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧
 
-Images can be added to `src/assets/` and embedded in Markdown with a relative link.
+## Ajustos bàsics per fer el mòbil més còmode
+### Lletra gran i clara
 
-Static assets, like favicons, can be placed in the `public/` directory.
+Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa petita. Com fer la lletra més gran:
 
-## 🧞 Commands
+1. Obre Configuració.
+2. Entra a Pantalla.
+![Configuración accediendo al apartado de Pantalla y Brillo](../../assets/images/imagen1.png)
+3. Toca Mida del text.
+![Configurar el tamaño del texto](../../assets/images/imagen2.png)
+4. Mou la barra fins que la lletra es vegi gran.
+![(Descripcion)](../../assets/images/imagen3.png)
 
-All commands are run from the root of the project, from a terminal:
+**Text en negreta:** Configuració → Accessibilitat → Text en negreta. 
+![(Descripcion)](../../assets/images/imagen4.png)
+![(Descripcion)](../../assets/images/imagen5.png)
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+**Zoom:** Configuració → Accessibilitat → Zoom.
+![(Descripcion)](../../assets/images/imagen6.png)
+![(Descripcion)](../../assets/images/imagen7.png)
 
-## 👀 Want to learn more?
+### Volum i so
+- Botons laterals per pujar o baixar el volum. 
+- Configuració → So → Vibració. 
+![(Descripcion)](../../assets/images/imagen8.png)
+![(Descripcion)](../../assets/images/imagen9.png)
+![(Descripcion)](../../assets/images/imagen10.png)
 
-Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+- Configuració → Accessibilitat → Subtítols.
+![(Descripcion)](../../assets/images/imagen11.png)
+![(Descripcion)](../../assets/images/imagen12.png)
+
+### Mode fàcil
+
+- TalkBack: el mòbil llegeix en veu alta el que hi ha a la pantalla. 
+- Mode senzill: icones grans i menys opcions.
+
+## Aplicacions bàsiques del mòbil
+
+**La linterna:** Serveix per il·luminar en foscor. Normalment es troba a la barra superior del mòbil. 
+![(Descripcion)](../../assets/images/imagen13.png)
+
+**El calendari:** Serveix per recordar cites, aniversaris i medicació. Prem “+” per afegir un recordatori. 
+
+**Notes:** Serveix per apuntar coses importants com la compra, medicació o telèfons. 
+
+**La calculadora:** Ideal per fer comptes ràpids sense obrir el banc.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## WhatsApp: missatges, fotos, notes de veu i videotrucades
+
+### Enviar un missatge
+1. Obre WhatsApp.
+2. Toca el nom de la persona.
+3. Escriu el missatge.
+![(Descripcion)](../../assets/images/imagen14.png)
+4. Fes clic a l’icone d’enviar.
+![(Descripcion)](../../assets/images/imagen15.png)
+
+### Enviar una foto
+1. Clip o càmera.
+2. Fes la foto o tria’n una.
+3. Envia.
+
+### Nota de veu
+1. Mantén premut el micròfon.
+![(Descripcion)](../../assets/images/imagen16.png)
+2. Parla.
+3. Deixa de pulsar el botó del micròfon.
+![(Descripcion)](../../assets/images/imagen17.png)
+
+### Videotrucada
+1. Entra al xat.
+2. Toca la càmera.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Fotos i vídeos: fer, trobar, enviar i editar
+
+### Compartir fotos
+1. Obre la foto.
+![(Descripcion)](../../assets/images/imagen18.png)
+
+2. Compartir.
+3. Tria WhatsApp.
+![(Descripcion)](../../assets/images/imagen19.png)
+
+### Editar fotos i vídeos (molt fàcil)
+1. Obre Galeria.
+![(Descripcion)](../../assets/images/imagen22.png)
+2. Toca el vídeo.
+![(Descripcion)](../../assets/images/imagen20.png)
+3. Prem Editar.
+![(Descripcion)](../../assets/images/imagen21.png)
+4. Pots tallar, retallar o afegir música.
+5. Guarda.
+
+## Manteniment del mòbil
+
+Eliminar fotos duplicades
+- **Galeria**
+
+![(Descripcion)](../../assets/images/imagen23.png)
+**→ Àlbums → Duplicats**
+
+![(Descripcion)](../../assets/images/imagen24.png)
+![(Descripcion)](../../assets/images/imagen25.png)
+
+**→ Eliminar**
+
+
+Eliminar aplicacions que no uses
+- Mantén premut sobre l’app → Eliminar
+![(Descripcion)](../../assets/images/imagen26.png)
+
+Actualitzar aplicacions Play Store / App Store → Actualitzacions. 
+
+Evitar que el mòbil vagi lent
+- Tanca pestanyes, elimina apps, reinicia el mòbil 1 cop per setmana.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Internet: buscar, entrar a webs i no perdre’t
+
+### Buscar informació a Google
+1. Obre Chrome.
+![(Descripcion)](../../assets/images/imagen27.png)
+
+2. Escriu el que vols saber.
+![(Descripcion)](../../assets/images/imagen28.png)
+
+3. Prem Buscar.
+
+### Buscar amb la veu
+1. Prem el micròfon.
+![(Descripcion)](../../assets/images/imagen29.png)
+
+2. Digues el que vols buscar.
+
+### Entrar a una pàgina web
+1. Escriu el nom de la web.
+![(Descripcion)](../../assets/images/imagen30.png)
+
+2. Toca el primer resultat oficial.
+
+3. Si et perds, prem “enrere”.
+
+### Tancar finestres
+1. Botó de pestanyes.
+2. Tanca amb la X.
+![(Descripcion)](../../assets/images/imagen31.png)
+
+### Xarxes socials explicades fàcilment
+- Facebook: Veure fotos de la família, llegir notícies, comentar. 
+![(Descripcion)](../../assets/images/imagen32.png)
+
+- Instagram: Story (foto de 24h), Post (foto normal), Reels (vídeos curts). 
+![(Descripcion)](../../assets/images/imagen33.png)
+
+- YouTube: Vídeos de música, receptes, notícies, exercicis suaus. 
+![(Descripcion)](../../assets/images/imagen34.png)
+
+- TikTok: Vídeos curts. No cal publicar res, només mirar.
+![(Descripcion)](../../assets/images/imagen35.png)
+
+### Llenguatge jove explicat
+- **LOL**: fa riure 
+- **XD**: cara rient 
+- **Cringe**: fa vergonya aliena 
+- **Mood**: estat d’ànim 
+- **Bro**: amic 
+- **Spam**: massa missatges 
+- **Fake**: fals 
+- **Trend**: moda 
+- **Viral**: molt popular 
+- **Filtro**: efecte per fotos 
+- **DM**: missatge privat
+
+- **Story**: foto de 24h
+- **Reels**: vídeos curts 
+- **Follow**: seguir algú 
+- **Unfollow**: deixar de seguir
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Documents: descarregar, trobar, obrir, enviar i firmar
+
+### Descarregar documents
+1. Toca “Descarregar”.
+2. El document va a Fitxers → Descàrregues.
+
+### Trobar documents
+1. Obre Fitxers.
+2. Entra a Descàrregues.
+3. Toca el document.
+
+### Obrir PDF
+1. Toca el PDF.
+2. Fes zoom amb dos dits.
+3. Si la lletra és petita, activa el zoom del mòbil.
+
+### Enviar un document
+1. Obre el document.
+2. Prem Compartir.
+3. Tria WhatsApp o correu.
+
+### Firma digital
+La firma digital és com una signatura per internet.
+
+1. Normalment:
+2. Reps un document.
+3. Toca “Firmar”.
+4. Escrius la teva signatura amb el dit.
+5. Prem “Guardar”.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Tràmits online: cita mèdica, documents oficials, webs complicades
+
+### Demana cita mèdica
+
+1. Entra a la web del CAP.
+![(Descripcion)](../../assets/images/imagen36.png)
+
+2. Toca “Demana cita”.
+![(Descripcion)](../../assets/images/imagen37.png)
+![(Descripcion)](../../assets/images/imagen38.png)
+
+3. Tria metge.
+4. Tria dia i hora.
+5. Confirmar.
+
+### Fer tràmits oficials
+Les webs oficials sovint estan mal dissenyades. No és culpa teva si et perds. 
+
+Consells:
+- Llegeix amb calma. 
+- Si surt una finestra estranya, tanca-la amb la X. 
+- Si no entens alguna cosa, torna enrere. 
+- Si demana contrasenya, escriu-la amb tranquil·litat. 
+- Si et confons, no passa res: pots començar de nou.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Banc digital: moviments, transferències i seguretat
+
+### Entrar al banc
+1. Obre l’aplicació.
+2. Escriu usuari i contrasenya.
+
+### Consultar moviments
+1. Entra a “Moviments”.
+2. Llegeix els últims càrrecs.
+
+### Fer una transferència
+1. Entra a “Transferències”.
+2. Escriu el número de compte.
+3. Revisa dues vegades.
+4. Confirmar.
+
+### Seguretat
+- No comparteixis contrasenyes. 
+- No facis transferències si tens dubtes. 
+- No cliquis en enllaços sospitosos.
+
+![(Descripcion)](../../assets/images/imagen39.png)
+![(Descripcion)](../../assets/images/imagen40.png)
+
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Evitar estafes, spam i trucades automàtiques
+
+### Bloquejar números
+Telèfon → mantén premut → Bloquejar.
+
+
+### Detectar estafes
+Demanen contrasenyes → sospitós. Premis inesperats → fals. Enllaços estranys → no clicar.
+
+### Trucades automàtiques
+Si et demanen “prem 1, prem 2”, pot confondre.
+
+### Consells:
+- Escolta amb calma. 
+- Si no ho entens, espera: ho repeteixen. 
+- Si et perds, penja i torna a trucar.
+
+✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ ✧ 
+## Desconnectar quan el mòbil et satura
+- Apaga notificacions. 
+- Llegeix llibres digitals amb lletra gran. 
+- Mira vídeos relaxants. 
+- Fes pauses de 10 minuts.
+
+### Ajuda ràpida
+- No trobo una foto: Galeria → Recents. 
+- No puc connectar-me al Wifi: Configuració → Wifi. 
+- No sé tancar una finestra: Botó de pestanyes → X. 
+- No sé fer una videotrucada: WhatsApp → càmera.
+
+## Per a familiars i joves
+Si ajudes algú amb el mòbil:
+
+- Parla a poc a poc. 
+- Repetir no molesta. 
+- Escriu els passos en un paper. 
+- No diguis “és fàcil”. 
+- No ho facis tu: fes-ho amb ell/a.
