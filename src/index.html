@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="ca">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Guia Digital Amiga</title>
+<meta name="description" content="Una guia pensada per a tu, perquè puguis utilitzar el mòbil amb calma, seguretat i sense vergonya.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --bg: #FAF6ED;
+    --bg-soft: #F1ECDD;
+    --ink: #2E2B24;
+    --ink-soft: #5B564A;
+    --sage: #4F6F60;
+    --sage-deep: #35473E;
+    --gold: #D79A2C;
+    --line: #DED6C2;
+    --card: #FFFFFF;
+    --radius: 18px;
+    --maxw: 760px;
+  }
+
+  *{ box-sizing: border-box; }
+
+  html{ scroll-behavior: smooth; }
+
+  body{
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: 'Atkinson Hyperlegible', Arial, sans-serif;
+    font-size: 20px;
+    line-height: 1.65;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1, h2, h3{
+    font-family: 'Fraunces', Georgia, serif;
+    color: var(--sage-deep);
+    line-height: 1.2;
+    font-weight: 600;
+  }
+
+  a{ color: var(--sage-deep); }
+  a:focus-visible, button:focus-visible, summary:focus-visible{
+    outline: 3px solid var(--gold);
+    outline-offset: 3px;
+  }
+
+  img{ max-width: 100%; border-radius: 12px; display:block; }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position: relative;
+    padding: 4.5rem 1.5rem 5rem;
+    text-align: center;
+    background:
+      radial-gradient(600px 300px at 15% -10%, #DCE8DD 0%, transparent 60%),
+      radial-gradient(500px 260px at 100% 0%, #F4E3C2 0%, transparent 55%),
+      var(--bg-soft);
+    border-bottom: 1px solid var(--line);
+  }
+  .hero .sparkles{
+    letter-spacing: .35em;
+    color: var(--gold);
+    font-size: 1.1rem;
+    margin-bottom: 1.6rem;
+  }
+  .hero h1{
+    font-size: clamp(2.2rem, 5vw, 3.2rem);
+    margin: 0 0 1rem;
+  }
+  .hero p.lede{
+    max-width: 620px;
+    margin: 0 auto;
+    font-size: 1.2rem;
+    color: var(--ink-soft);
+  }
+
+  /* ---------- Layout ---------- */
+  main{
+    max-width: var(--maxw);
+    margin: 0 auto;
+    padding: 0 1.5rem;
+  }
+
+  .intro{
+    padding: 3rem 0 1rem;
+  }
+  .intro .signature{
+    font-style: italic;
+    color: var(--ink-soft);
+  }
+  .intro ul{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: var(--radius);
+    padding: 1.6rem 1.6rem 1.6rem 2.6rem;
+    margin: 1.6rem 0;
+    list-style: none;
+  }
+  .intro ul li{
+    position: relative;
+    margin: .6rem 0;
+  }
+  .intro ul li::before{
+    content: "✧";
+    color: var(--gold);
+    position: absolute;
+    left: -1.6rem;
+  }
+
+  /* ---------- Table of contents ---------- */
+  nav.toc{
+    background: var(--sage-deep);
+    border-radius: var(--radius);
+    padding: 1.8rem 1.8rem 2rem;
+    margin: 2rem 0 3rem;
+  }
+  nav.toc h2{
+    color: #F4EFDF;
+    margin-top: 0;
+    font-size: 1.3rem;
+  }
+  nav.toc ol{
+    columns: 2;
+    column-gap: 2rem;
+    padding-left: 1.3rem;
+    margin: 0;
+  }
+  nav.toc li{ margin: .5rem 0; break-inside: avoid; }
+  nav.toc a{
+    color: #F4EFDF;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(244,239,223,.35);
+  }
+  nav.toc a:hover{ border-bottom-color: #F4EFDF; }
+
+  @media (max-width: 560px){
+    nav.toc ol{ columns: 1; }
+  }
+
+  /* ---------- Sections ---------- */
+  section{
+    padding: 2.6rem 0;
+    border-bottom: 1px dashed var(--line);
+  }
+  section:last-of-type{ border-bottom: none; }
+
+  section > h2{
+    font-size: clamp(1.5rem, 3vw, 1.9rem);
+    margin: 0 0 1.4rem;
+    display: flex;
+    align-items: baseline;
+    gap: .6rem;
+  }
+  section > h2 .mark{
+    color: var(--gold);
+    font-size: 1.1em;
+  }
+
+  h3{
+    font-size: 1.2rem;
+    margin: 2rem 0 .8rem;
+    color: var(--sage);
+  }
+
+  .lead-text{
+    color: var(--ink-soft);
+    max-width: 62ch;
+  }
+
+  /* ---------- Step lists ---------- */
+  ol.steps{
+    list-style: none;
+    counter-reset: step;
+    padding: 0;
+    margin: 1rem 0 1.8rem;
+  }
+  ol.steps > li{
+    counter-increment: step;
+    position: relative;
+    padding: .3rem 0 .3rem 3.2rem;
+    margin-bottom: 1.1rem;
+  }
+  ol.steps > li::before{
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+    background: var(--sage);
+    color: #fff;
+    font-family: 'Fraunces', serif;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.05rem;
+  }
+  ol.steps > li img{
+    margin-top: .8rem;
+    border: 1px solid var(--line);
+  }
+
+  /* plain (non-numbered) list */
+  ul.plain{
+    padding-left: 1.3rem;
+    margin: 1rem 0 1.8rem;
+  }
+  ul.plain li{ margin: .5rem 0; }
+
+  /* ---------- Info / tip boxes ---------- */
+  .box{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-left: 6px solid var(--sage);
+    border-radius: 12px;
+    padding: 1.2rem 1.4rem;
+    margin: 1.4rem 0;
+  }
+  .box.gold{ border-left-color: var(--gold); }
+  .box p:first-child{ margin-top: 0; }
+  .box p:last-child{ margin-bottom: 0; }
+
+  /* path breadcrumbs like "Configuració → Pantalla" */
+  .path{
+    font-weight: 700;
+    color: var(--sage-deep);
+  }
+
+  /* image path caption note (since real screenshots may be missing) */
+  figure.shot{
+    margin: .8rem 0 1.4rem;
+  }
+  figure.shot img{
+    width: 100%;
+    border: 1px solid var(--line);
+    background: var(--bg-soft);
+    min-height: 60px;
+  }
+  figure.shot figcaption{
+    font-size: .95rem;
+    color: var(--ink-soft);
+    margin-top: .4rem;
+  }
+
+  /* slang glossary grid */
+  .glossary{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: .9rem 1.6rem;
+    margin: 1.2rem 0 1.8rem;
+  }
+  .glossary .term{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .8rem 1rem;
+  }
+  .glossary .term b{ color: var(--sage-deep); }
+
+  /* quick-help list */
+  .quickhelp{
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+  }
+  .quickhelp li{
+    background: var(--card);
+    border: 1px solid var(--line);
+    border-radius: 10px;
+    padding: .9rem 1.1rem;
+    margin-bottom: .7rem;
+  }
+  .quickhelp b{ color: var(--sage-deep); }
+
+  .back-top{
+    display: inline-block;
+    margin-top: 1.2rem;
+    font-size: .95rem;
+    text-decoration: none;
+    color: var(--ink-soft);
+  }
+  .back-top:hover{ color: var(--sage-deep); }
+
+  footer{
+    text-align: center;
+    padding: 3rem 1.5rem 4rem;
+    color: var(--ink-soft);
+    font-size: .95rem;
+  }
+
+  .sep{
+    text-align: center;
+    color: var(--gold);
+    letter-spacing: .4em;
+    margin: 0;
+    font-size: .9rem;
+  }
+
+  @media (prefers-reduced-motion: reduce){
+    html{ scroll-behavior: auto; }
+  }
+</style>
+</head>
+<body>
+
+<header class="hero" id="top">
+  <p class="sparkles">✧ ✧ ✧ ✧ ✧ ✧ ✧</p>
+  <h1>Guia Digital Amiga</h1>
+  <p class="lede">Una guia pensada per a tu, perquè puguis utilitzar el mòbil amb calma, seguretat i sense vergonya.</p>
+</header>
+
+<main>
+
+  <div class="intro">
+    <h2>Benvingut/da a la Guia Digital Amiga</h2>
+    <p>Hola! Aquesta guia està creada per a tu, si alguna vegada t'has sentit perdut/da amb el mòbil, si et fa vergonya demanar ajuda o si tens por de tocar algun botó i equivocar-te.</p>
+    <p class="signature">Sóc Natalia Roman Rivera, estudiant de Batxillerat, i he fet aquesta guia perquè sé que moltes persones adultes i grans tenen dificultats amb el mòbil. No és perquè no en siguin capaces, sinó perquè ningú els ha explicat les coses a poc a poc, amb calma i amb lletra gran.</p>
+    <p>Aquí trobaràs:</p>
+    <ul>
+      <li>Explicacions molt senzilles</li>
+      <li>Passos clars i curts</li>
+      <li>Lletra gran i fàcil de llegir</li>
+      <li>Solucions a les coses que més acostumen a costar</li>
+      <li>I sobretot: tranquil·litat perquè aquí pots aprendre sense pressa i sense vergonya</li>
+    </ul>
+  </div>
+
+  <nav class="toc" aria-label="Índex de continguts">
+    <h2>Índex</h2>
+    <ol>
+      <li><a href="#ajustos">Ajustos bàsics per fer el mòbil més còmode</a></li>
+      <li><a href="#apps-basiques">Aplicacions bàsiques del mòbil</a></li>
+      <li><a href="#whatsapp">WhatsApp</a></li>
+      <li><a href="#fotos">Fotos i vídeos</a></li>
+      <li><a href="#manteniment">Manteniment del mòbil</a></li>
+      <li><a href="#internet">Internet i xarxes socials</a></li>
+      <li><a href="#documents">Documents</a></li>
+      <li><a href="#tramits">Tràmits online</a></li>
+      <li><a href="#banc">Banc digital</a></li>
+      <li><a href="#estafes">Evitar estafes i spam</a></li>
+      <li><a href="#desconnectar">Desconnectar i ajuda ràpida</a></li>
+      <li><a href="#familiars">Per a familiars i joves</a></li>
+    </ol>
+  </nav>
+
+  <!-- ================= AJUSTOS ================= -->
+  <section id="ajustos">
+    <h2><span class="mark">✧</span> Ajustos bàsics per fer el mòbil més còmode</h2>
+
+    <h3>Lletra gran i clara</h3>
+    <p class="lead-text">Si et costa llegir la pantalla, no és culpa teva. La lletra sovint és massa petita. Aquí tens com fer-la més gran:</p>
+    <ol class="steps">
+      <li>Obre <strong>Configuració</strong>.</li>
+      <li>Entra a <strong>Pantalla</strong>.
+        <figure class="shot">
+          <img src="assets/images/imagen1.png" alt="Configuració accedint a l'apartat de Pantalla i Brillo" loading="lazy">
+        </figure>
+      </li>
+      <li>Toca <strong>Mida del text</strong>.
+        <figure class="shot">
+          <img src="assets/images/imagen2.png" alt="Configurar la mida del text" loading="lazy">
+        </figure>
+      </li>
+      <li>Mou la barra fins que la lletra es vegi gran.
+        <figure class="shot">
+          <img src="assets/images/imagen3.png" alt="Barra per ajustar la mida del text" loading="lazy">
+        </figure>
+      </li>
+    </ol>
+
+    <div class="box">
+      <p><span class="path">Text en negreta:</span> Configuració → Accessibilitat → Text en negreta.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen4.png" alt="Activar text en negreta" loading="lazy">
+      </figure>
+      <figure class="shot">
+        <img src="assets/images/imagen5.png" alt="Text en negreta activat" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="box">
+      <p><span class="path">Zoom:</span> Configuració → Accessibilitat → Zoom.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen6.png" alt="Activar el zoom" loading="lazy">
+      </figure>
+      <figure class="shot">
+        <img src="assets/images/imagen7.png" alt="Zoom en funcionament" loading="lazy">
+      </figure>
+    </div>
+
+    <h3>Volum i so</h3>
+    <ul class="plain">
+      <li>Botons laterals per pujar o baixar el volum.</li>
+      <li><span class="path">Configuració → So → Vibració.</span></li>
+    </ul>
+    <figure class="shot">
+      <img src="assets/images/imagen8.png" alt="Ajustos de so" loading="lazy">
+    </figure>
+    <figure class="shot">
+      <img src="assets/images/imagen9.png" alt="Ajustos de vibració" loading="lazy">
+    </figure>
+    <figure class="shot">
+      <img src="assets/images/imagen10.png" alt="Confirmació de vibració activada" loading="lazy">
+    </figure>
+
+    <div class="box">
+      <p><span class="path">Configuració → Accessibilitat → Subtítols.</span></p>
+      <figure class="shot">
+        <img src="assets/images/imagen11.png" alt="Activar subtítols" loading="lazy">
+      </figure>
+      <figure class="shot">
+        <img src="assets/images/imagen12.png" alt="Subtítols activats" loading="lazy">
+      </figure>
+    </div>
+
+    <h3>Mode fàcil</h3>
+    <ul class="plain">
+      <li><strong>TalkBack:</strong> el mòbil llegeix en veu alta el que hi ha a la pantalla.</li>
+      <li><strong>Mode senzill:</strong> icones grans i menys opcions.</li>
+    </ul>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= APPS BÀSIQUES ================= -->
+  <section id="apps-basiques">
+    <h2><span class="mark">✧</span> Aplicacions bàsiques del mòbil</h2>
+
+    <div class="box">
+      <p><strong>La linterna:</strong> serveix per il·luminar en foscor. Normalment es troba a la barra superior del mòbil.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen13.png" alt="Icona de la linterna" loading="lazy">
+      </figure>
+    </div>
+
+    <div class="box">
+      <p><strong>El calendari:</strong> serveix per recordar cites, aniversaris i medicació. Prem "+" per afegir un recordatori.</p>
+    </div>
+
+    <div class="box">
+      <p><strong>Notes:</strong> serveix per apuntar coses importants com la compra, medicació o telèfons.</p>
+    </div>
+
+    <div class="box">
+      <p><strong>La calculadora:</strong> ideal per fer comptes ràpids sense obrir el banc.</p>
+    </div>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= WHATSAPP ================= -->
+  <section id="whatsapp">
+    <h2><span class="mark">✧</span> WhatsApp: missatges, fotos, notes de veu i videotrucades</h2>
+
+    <h3>Enviar un missatge</h3>
+    <ol class="steps">
+      <li>Obre WhatsApp.</li>
+      <li>Toca el nom de la persona.</li>
+      <li>Escriu el missatge.
+        <figure class="shot">
+          <img src="assets/images/imagen14.png" alt="Escriure un missatge a WhatsApp" loading="lazy">
+        </figure>
+      </li>
+      <li>Fes clic a l'icona d'enviar.
+        <figure class="shot">
+          <img src="assets/images/imagen15.png" alt="Icona d'enviar missatge" loading="lazy">
+        </figure>
+      </li>
+    </ol>
+
+    <h3>Enviar una foto</h3>
+    <ol class="steps">
+      <li>Clip o càmera.</li>
+      <li>Fes la foto o tria'n una.</li>
+      <li>Envia.</li>
+    </ol>
+
+    <h3>Nota de veu</h3>
+    <ol class="steps">
+      <li>Mantén premut el micròfon.
+        <figure class="shot">
+          <img src="assets/images/imagen16.png" alt="Mantenir premut el micròfon" loading="lazy">
+        </figure>
+      </li>
+      <li>Parla.</li>
+      <li>Deixa de prémer el botó del micròfon.
+        <figure class="shot">
+          <img src="assets/images/imagen17.png" alt="Deixar anar el micròfon" loading="lazy">
+        </figure>
+      </li>
+    </ol>
+
+    <h3>Videotrucada</h3>
+    <ol class="steps">
+      <li>Entra al xat.</li>
+      <li>Toca la càmera.</li>
+    </ol>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= FOTOS ================= -->
+  <section id="fotos">
+    <h2><span class="mark">✧</span> Fotos i vídeos: fer, trobar, enviar i editar</h2>
+
+    <h3>Compartir fotos</h3>
+    <ol class="steps">
+      <li>Obre la foto.
+        <figure class="shot">
+          <img src="assets/images/imagen18.png" alt="Obrir una foto a la galeria" loading="lazy">
+        </figure>
+      </li>
+      <li>Compartir.</li>
+      <li>Tria WhatsApp.
+        <figure class="shot">
+          <img src="assets/images/imagen19.png" alt="Compartir una foto per WhatsApp" loading="lazy">
+        </figure>
+      </li>
+    </ol>
+
+    <h3>Editar fotos i vídeos (molt fàcil)</h3>
+    <ol class="steps">
+      <li>Obre Galeria.
+        <figure class="shot">
+          <img src="assets/images/imagen22.png" alt="Obrir la galeria" loading="lazy">
+        </figure>
+      </li>
+      <li>Toca el vídeo.
+        <figure class="shot">
+          <img src="assets/images/imagen20.png" alt="Tocar el vídeo" loading="lazy">
+        </figure>
+      </li>
+      <li>Prem Editar.
+        <figure class="shot">
+          <img src="assets/images/imagen21.png" alt="Prémer l'opció Editar" loading="lazy">
+        </figure>
+      </li>
+      <li>Pots tallar, retallar o afegir música.</li>
+      <li>Guarda.</li>
+    </ol>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= MANTENIMENT ================= -->
+  <section id="manteniment">
+    <h2><span class="mark">✧</span> Manteniment del mòbil</h2>
+
+    <h3>Eliminar fotos duplicades</h3>
+    <ol class="steps">
+      <li><strong>Galeria</strong>
+        <figure class="shot">
+          <img src="assets/images/imagen23.png" alt="Obrir la galeria" loading="lazy">
+        </figure>
+      </li>
+      <li><span class="path">Àlbums → Duplicats</span>
+        <figure class="shot">
+          <img src="assets/images/imagen24.png" alt="Anar a Àlbums i Duplicats" loading="lazy">
+        </figure>
+        <figure class="shot">
+          <img src="assets/images/imagen25.png" alt="Llista de fotos duplicades" loading="lazy">
+        </figure>
+      </li>
+      <li>Eliminar.</li>
+    </ol>
+
+    <h3>Eliminar aplicacions que no uses</h3>
+    <ul class="plain">
+      <li>Mantén premut sobre l'app → Eliminar.</li>
+    </ul>
+    <figure class="shot">
+      <img src="assets/images/imagen26.png" alt="Eliminar una aplicació" loading="lazy">
+    </figure>
+
+    <div class="box gold">
+      <p><strong>Actualitzar aplicacions:</strong> Play Store / App Store → Actualitzacions.</p>
+    </div>
+
+    <h3>Evitar que el mòbil vagi lent</h3>
+    <ul class="plain">
+      <li>Tanca pestanyes, elimina apps i reinicia el mòbil un cop per setmana.</li>
+    </ul>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= INTERNET ================= -->
+  <section id="internet">
+    <h2><span class="mark">✧</span> Internet: buscar, entrar a webs i no perdre't</h2>
+
+    <h3>Buscar informació a Google</h3>
+    <ol class="steps">
+      <li>Obre Chrome.
+        <figure class="shot">
+          <img src="assets/images/imagen27.png" alt="Obrir Chrome" loading="lazy">
+        </figure>
+      </li>
+      <li>Escriu el que vols saber.
+        <figure class="shot">
+          <img src="assets/images/imagen28.png" alt="Escriure la cerca" loading="lazy">
+        </figure>
+      </li>
+      <li>Prem Buscar.</li>
+    </ol>
+
+    <h3>Buscar amb la veu</h3>
+    <ol class="steps">
+      <li>Prem el micròfon.
+        <figure class="shot">
+          <img src="assets/images/imagen29.png" alt="Prémer el micròfon de cerca" loading="lazy">
+        </figure>
+      </li>
+      <li>Digues el que vols buscar.</li>
+    </ol>
+
+    <h3>Entrar a una pàgina web</h3>
+    <ol class="steps">
+      <li>Escriu el nom de la web.
+        <figure class="shot">
+          <img src="assets/images/imagen30.png" alt="Escriure el nom d'una web" loading="lazy">
+        </figure>
+      </li>
+      <li>Toca el primer resultat oficial.</li>
+      <li>Si et perds, prem "enrere".</li>
+    </ol>
+
+    <h3>Tancar finestres</h3>
+    <ol class="steps">
+      <li>Botó de pestanyes.</li>
+      <li>Tanca amb la X.
+        <figure class="shot">
+          <img src="assets/images/imagen31.png" alt="Tancar una pestanya amb la X" loading="lazy">
+        </figure>
+      </li>
+    </ol>
+
+    <h3>Xarxes socials explicades fàcilment</h3>
+    <div class="box">
+      <p><strong>Facebook:</strong> veure fotos de la família, llegir notícies, comentar.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen32.png" alt="Pantalla de Facebook" loading="lazy">
+      </figure>
+    </div>
+    <div class="box">
+      <p><strong>Instagram:</strong> Story (foto de 24h), Post (foto normal), Reels (vídeos curts).</p>
+      <figure class="shot">
+        <img src="assets/images/imagen33.png" alt="Pantalla d'Instagram" loading="lazy">
+      </figure>
+    </div>
+    <div class="box">
+      <p><strong>YouTube:</strong> vídeos de música, receptes, notícies, exercicis suaus.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen34.png" alt="Pantalla de YouTube" loading="lazy">
+      </figure>
+    </div>
+    <div class="box">
+      <p><strong>TikTok:</strong> vídeos curts. No cal publicar res, només mirar.</p>
+      <figure class="shot">
+        <img src="assets/images/imagen35.png" alt="Pantalla de TikTok" loading="lazy">
+      </figure>
+    </div>
+
+    <h3>Llenguatge jove explicat</h3>
+    <div class="glossary">
+      <div class="term"><b>LOL</b> — fa riure</div>
+      <div class="term"><b>XD</b> — cara rient</div>
+      <div class="term"><b>Cringe</b> — fa vergonya aliena</div>
+      <div class="term"><b>Mood</b> — estat d'ànim</div>
+      <div class="term"><b>Bro</b> — amic</div>
+      <div class="term"><b>Spam</b> — massa missatges</div>
+      <div class="term"><b>Fake</b> — fals</div>
+      <div class="term"><b>Trend</b> — moda</div>
+      <div class="term"><b>Viral</b> — molt popular</div>
+      <div class="term"><b>Filtro</b> — efecte per fotos</div>
+      <div class="term"><b>DM</b> — missatge privat</div>
+      <div class="term"><b>Story</b> — foto de 24h</div>
+      <div class="term"><b>Reels</b> — vídeos curts</div>
+      <div class="term"><b>Follow</b> — seguir algú</div>
+      <div class="term"><b>Unfollow</b> — deixar de seguir</div>
+    </div>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= DOCUMENTS ================= -->
+  <section id="documents">
+    <h2><span class="mark">✧</span> Documents: descarregar, trobar, obrir, enviar i firmar</h2>
+
+    <h3>Descarregar documents</h3>
+    <ol class="steps">
+      <li>Toca "Descarregar".</li>
+      <li>El document va a Fitxers → Descàrregues.</li>
+    </ol>
+
+    <h3>Trobar documents</h3>
+    <ol class="steps">
+      <li>Obre Fitxers.</li>
+      <li>Entra a Descàrregues.</li>
+      <li>Toca el document.</li>
+    </ol>
+
+    <h3>Obrir PDF</h3>
+    <ol class="steps">
+      <li>Toca el PDF.</li>
+      <li>Fes zoom amb dos dits.</li>
+      <li>Si la lletra és petita, activa el zoom del mòbil.</li>
+    </ol>
+
+    <h3>Enviar un document</h3>
+    <ol class="steps">
+      <li>Obre el document.</li>
+      <li>Prem Compartir.</li>
+      <li>Tria WhatsApp o correu.</li>
+    </ol>
+
+    <h3>Firma digital</h3>
+    <p class="lead-text">La firma digital és com una signatura per internet.</p>
+    <ol class="steps">
+      <li>Reps un document.</li>
+      <li>Toca "Firmar".</li>
+      <li>Escrius la teva signatura amb el dit.</li>
+      <li>Prem "Guardar".</li>
+    </ol>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= TRÀMITS ================= -->
+  <section id="tramits">
+    <h2><span class="mark">✧</span> Tràmits online: cita mèdica, documents oficials, webs complicades</h2>
+
+    <h3>Demana cita mèdica</h3>
+    <ol class="steps">
+      <li>Entra a la web del CAP.
+        <figure class="shot">
+          <img src="assets/images/imagen36.png" alt="Web del CAP" loading="lazy">
+        </figure>
+      </li>
+      <li>Toca "Demana cita".
+        <figure class="shot">
+          <img src="assets/images/imagen37.png" alt="Botó Demana cita" loading="lazy">
+        </figure>
+        <figure class="shot">
+          <img src="assets/images/imagen38.png" alt="Formulari de la cita" loading="lazy">
+        </figure>
+      </li>
+      <li>Tria metge.</li>
+      <li>Tria dia i hora.</li>
+      <li>Confirmar.</li>
+    </ol>
+
+    <h3>Fer tràmits oficials</h3>
+    <p class="lead-text">Les webs oficials sovint estan mal dissenyades. No és culpa teva si et perds.</p>
+    <div class="box">
+      <p><strong>Consells:</strong></p>
+      <ul class="plain">
+        <li>Llegeix amb calma.</li>
+        <li>Si surt una finestra estranya, tanca-la amb la X.</li>
+        <li>Si no entens alguna cosa, torna enrere.</li>
+        <li>Si demana contrasenya, escriu-la amb tranquil·litat.</li>
+        <li>Si et confons, no passa res: pots començar de nou.</li>
+      </ul>
+    </div>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= BANC ================= -->
+  <section id="banc">
+    <h2><span class="mark">✧</span> Banc digital: moviments, transferències i seguretat</h2>
+
+    <h3>Entrar al banc</h3>
+    <ol class="steps">
+      <li>Obre l'aplicació.</li>
+      <li>Escriu usuari i contrasenya.</li>
+    </ol>
+
+    <h3>Consultar moviments</h3>
+    <ol class="steps">
+      <li>Entra a "Moviments".</li>
+      <li>Llegeix els últims càrrecs.</li>
+    </ol>
+
+    <h3>Fer una transferència</h3>
+    <ol class="steps">
+      <li>Entra a "Transferències".</li>
+      <li>Escriu el número de compte.</li>
+      <li>Revisa dues vegades.</li>
+      <li>Confirmar.</li>
+    </ol>
+
+    <h3>Seguretat</h3>
+    <div class="box gold">
+      <ul class="plain">
+        <li>No comparteixis contrasenyes.</li>
+        <li>No facis transferències si tens dubtes.</li>
+        <li>No cliquis en enllaços sospitosos.</li>
+      </ul>
+    </div>
+    <figure class="shot">
+      <img src="assets/images/imagen39.png" alt="Pantalla de seguretat del banc" loading="lazy">
+    </figure>
+    <figure class="shot">
+      <img src="assets/images/imagen40.png" alt="Avís de seguretat" loading="lazy">
+    </figure>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= ESTAFES ================= -->
+  <section id="estafes">
+    <h2><span class="mark">✧</span> Evitar estafes, spam i trucades automàtiques</h2>
+
+    <h3>Bloquejar números</h3>
+    <p class="lead-text"><span class="path">Telèfon → mantén premut → Bloquejar.</span></p>
+
+    <h3>Detectar estafes</h3>
+    <div class="box gold">
+      <ul class="plain">
+        <li>Demanen contrasenyes → sospitós.</li>
+        <li>Premis inesperats → fals.</li>
+        <li>Enllaços estranys → no clicar.</li>
+      </ul>
+    </div>
+
+    <h3>Trucades automàtiques</h3>
+    <p class="lead-text">Si et demanen "prem 1, prem 2", pot confondre.</p>
+
+    <h3>Consells</h3>
+    <ul class="plain">
+      <li>Escolta amb calma.</li>
+      <li>Si no ho entens, espera: ho repeteixen.</li>
+      <li>Si et perds, penja i torna a trucar.</li>
+    </ul>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= DESCONNECTAR ================= -->
+  <section id="desconnectar">
+    <h2><span class="mark">✧</span> Desconnectar quan el mòbil et satura</h2>
+    <ul class="plain">
+      <li>Apaga notificacions.</li>
+      <li>Llegeix llibres digitals amb lletra gran.</li>
+      <li>Mira vídeos relaxants.</li>
+      <li>Fes pauses de 10 minuts.</li>
+    </ul>
+
+    <h3>Ajuda ràpida</h3>
+    <ul class="quickhelp">
+      <li><b>No trobo una foto:</b> Galeria → Recents.</li>
+      <li><b>No puc connectar-me al Wifi:</b> Configuració → Wifi.</li>
+      <li><b>No sé tancar una finestra:</b> Botó de pestanyes → X.</li>
+      <li><b>No sé fer una videotrucada:</b> WhatsApp → càmera.</li>
+    </ul>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+  <!-- ================= FAMILIARS ================= -->
+  <section id="familiars">
+    <h2><span class="mark">✧</span> Per a familiars i joves</h2>
+    <p class="lead-text">Si ajudes algú amb el mòbil:</p>
+    <div class="box">
+      <ul class="plain">
+        <li>Parla a poc a poc.</li>
+        <li>Repetir no molesta.</li>
+        <li>Escriu els passos en un paper.</li>
+        <li>No diguis "és fàcil".</li>
+        <li>No ho facis tu: fes-ho amb ell/a.</li>
+      </ul>
+    </div>
+
+    <a class="back-top" href="#top">↑ Tornar a l'índex</a>
+  </section>
+
+</main>
+
+<footer>
+  <p class="sep">✧ ✧ ✧ ✧ ✧ ✧ ✧</p>
+  <p>Guia Digital Amiga — creada per Natalia Roman Rivera</p>
+</footer>
+
+</body>
+</html>
